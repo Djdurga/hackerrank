@@ -1,0 +1,21 @@
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        //LENGTH
+        int length = A.length() + B.length();
+        //COMPARE( if  is lexicographically larger than )
+        String ans = (A.compareTo(B))>0?"Yes":"No";
+        //Capitalize the first letter in  and  and print them on a single line, separated by a space.
+        A=A.substring(0,1).toUpperCase()+A.substring(1)+" ";
+        B=B.substring(0,1).toUpperCase()+B.substring(1);
+        //PRINT OUTPUT
+        System.out.println(length +"\n"+ ans + "\n" +(A+B));
+        
+    }
+}
+
